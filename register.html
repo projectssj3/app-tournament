@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Tournoi - Projet SSJ3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="tournament.html">Tournoi</a>
+            <a href="discord.html">Discord</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration-form">
+            <h1>Inscription au Tournoi</h1>
+            
+            <form id="tournament-registration">
+                <div class="form-group">
+                    <label for="discord-pseudo">Pseudo Discord *</label>
+                    <input type="text" id="discord-pseudo" placeholder="Ex: SonGoku#1234" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="main-character">Personnage Principal</label>
+                    <select id="main-character">
+                        <option>Son Goku</option>
+                        <option>Boo</option>
+                        <option>Broly</option>
+                        <option>Vegeta</option>
+                        <option>Freezer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Niveau Estimé</label>
+                    <div class="skill-level">
+                        <label><input type="radio" name="level" value="debutant" checked> Débutant</label>
+                        <label><input type="radio" name="level" value="intermediaire"> Intermédiaire</label>
+                        <label><input type="radio" name="level" value="professionnel"> Professionnel</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="cta-button">Valider l'Inscription</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
